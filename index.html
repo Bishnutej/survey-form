@@ -1,0 +1,99 @@
+</DOCTYPE html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<html lang="en">
+ <h1 id="title"> Survey Form</h1>
+  <div id="Survey-Outer">
+    <p id=description> Let us know About Your Social Networking Websites Preferences</p>
+  <form id="survey-form" action="MAIL TO:bishnutej@gmail.com" method="POST" enctype="text/plain">
+    <div class="SurveyTaps">
+      <div class="labels">
+<label id="name-label" for="name"> *Name:</label></div>
+      <div class="RightTap">
+    <input id="name" type="text" class="input-field" name="name" placeholder="Enter your name" Required></div>
+      </div>
+    <div class="SurveyTaps">
+      <div class="labels">
+        <label id="email-label" for="email"> *Email:</label></div>
+     <div class="RightTap"><input id="email" type="email" class="input-field" name="email" placeholder="Enter your Email" Required></div>
+ </div>
+    <div class="SurveyTaps">
+      <div class="labels">
+        <label id="number-label" for="number">*Age:</label></div>
+     <div class="RightTap">
+       <input id="number" class="input-field" type="number" min="1" max="125" placeholder="Age" Required></div>
+    </div>
+    <div class="SurveyTaps">
+      <div class="labels">
+        <label id="currentpos"> What is option best desripes your current role?</label></div>
+     <div class="RightTap">
+       <select id="dropdown" name="currentPos" class="dropdown">
+         <option disabled value>Select an option</option>
+         <option value="student">Student</option>
+         <option value="fulljob">Full time job</option>
+         <option value="partjob">Part time job</option>
+         <option value="other">Other</option>
+         <option value="preferno">Prefer not to say</option>
+       </select></div>
+    </div>
+    <div class="SurveyTaps">
+       <div class="labels">
+         <label for="SocialWebs">Which of the following  social networking websites do you currently have an account with?</label></div>
+      <div class="RightTap">
+        <ul id="Accounts" style="list-style: none;">
+  <li class="checkbox">
+    <label><input name="accountwith" type="checkbox" value="1">Instagram</label></li>
+  <li class="checkbox">
+    <label><input name="accountwith" type="checkbox" value="2">Facebook</label></li>
+  <li class="checkbox">
+    <label><input name="accountwith" type="checkbox" value="3">Twitter</label></li>
+  <li class="checkbox">
+    <label><input name="accountswith" type="checkbox" value="4">Google+</label></li>
+  <li class="checkbox">
+    <label><input name="accountswith" type="checkbox" value="5">Other (please specify)</label></li>
+ <input id="Othersbox" name="others" type="text"></ul></div>
+    </div>
+    <div class="SurveyTaps">
+      <div class="labels">
+   <label>In a typical week, how likely are you to use social networking websites?</label></div>
+      <div class="RightTap">
+        <ul style="list-style: none;">
+     <li class="radio">
+    <label><input name="Usingtime" type="radio" value="1">Extemely likely</label></li>
+<li class="radio">
+  <label><input name="Usingtime" type="radio" value="2">Very likely</label></li>
+<li class="radio">
+  <label><input name="Usingtime" type="radio" value="3">Moderately likely</label></li>
+    <li class="radio">
+      <label><input name="Usingtime" type="radio" value="4">Slightly likely</label></li>
+  <li class="radio">
+    <label><input name="Usingtime" type="radio" value="5">Not at all likely</label></li>
+</ul></div>  
+</div>
+    <div class="SurveyTaps">
+  <div class="labels">
+        <label>In a typical week, Which of the following social networking websites do you use most often</label></div>
+      <div class="RightTap">
+        <ul style="list-style: none;">
+          <li class="radio">
+            <label><input name="usemost" type="radio" value="1">Facebook</label></li>
+<li class="radio">
+  <label><input name="usemost" type="radio" value="2">Twitter</label></li>
+<li class="radio">
+  <label><input name="usemost" type="radio" value="3">Instagram</label></li>
+    <li class="radio">
+      <label><input name="usemost" type="radio" value="4">Google+</label></li>
+  <li class="radio">
+    <label><input name="usemost" type="radio" value="5">Other (please specify)</label></li>
+ <input id="Othersbox" name="others" type="text"></ul></div>
+    </div>
+    <div class="SurveyTaps">
+      <div class="labels">
+        <label for="reasons">Please, Tell us why you use that website (the one you selected in the previous question) most often?</label></div>
+      <div class="RightTap">
+        <textarea id="reasons" style="height:50px;" name="reason" class="input-field" placeholder="Write your reasons here..."></textarea></div>  
+    </div>
+    <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+  </html>
